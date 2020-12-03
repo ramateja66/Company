@@ -18,10 +18,10 @@ long days=ChronoUnit.DAYS.between(date1, date2);
 	pst.setInt(2,id);
 	int i=pst.executeUpdate();
 	if(i!=0)
-	response.sendRedirect("./granted.jsp");
+	response.sendRedirect("./granted.jsp?msg=success");
 }
 else
 {
-	response.sendRedirect("./cancelled.jsp");
+	response.sendRedirect("./cancelled.jsp?msg=failed");
 }
 %>
