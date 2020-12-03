@@ -53,7 +53,8 @@ public class EmployeeLogin extends HttpServlet {
 			if(set.next())
 			{
 				session.setAttribute("id", set.getInt("id"));
-				response.sendRedirect("employee_profile.jsp");
+				session.setAttribute("leaves",set.getInt("total_leaves"));
+				response.sendRedirect("employee_home.jsp");
 			}
 			else
 			{

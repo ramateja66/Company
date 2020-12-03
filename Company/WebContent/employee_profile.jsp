@@ -22,6 +22,7 @@ while(set.next())
 <th>Mobile</th>
 <th>Address</th>
 <th>MailId</th>
+<th>Remaining Leaves</th>
 </tr>
 <tr>
 <td><%=set.getString("firstname") %></td>
@@ -33,6 +34,7 @@ while(set.next())
 <td><%=set.getInt("mobile") %></td>
 <td><%=set.getString("address") %></td>
 <td><%=set.getString("mailid") %></td>
+<td><%=set.getInt("total_leaves") %></td>
 </tr>
 </table>
 <%} %>
